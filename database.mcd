@@ -1,0 +1,11 @@
+contient_ingredient, 01 INGREDIENT, 1N COCKTAIL : quantité_cl
+COCKTAIL : id_cocktail [int], nom_cocktail [varchar(255)], description_cocktail [varchar(16384)], image_cocktail, est_accepte_cocktail
+a_vote, 0N UTILISATEUR, 0N COCKTAIL : pour_contre_vote, date_vote
+
+INGREDIENT : id_ingredient [int], nom_ingredient [varchar(255)], description_ingredient [varchar(16384)], prix_cl_ingredient
+a_cree_cocktail, 0N UTILISATEUR, 11 COCKTAIL : date_creation_cocktail
+UTILISATEUR : id_utilisateur, nom_utilisateur, prenom_utilisateur, email_utilisateur
+
+:
+ROLE : id_role, nom_role
+a_role, 0n UTILISATEUR, 0n ROLE
