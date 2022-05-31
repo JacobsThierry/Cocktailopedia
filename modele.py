@@ -20,6 +20,7 @@ class Role(Base, AllFeaturesMixin):
    id_role = db.Column(db.Integer, primary_key=True)
    nom_role = db.Column(db.String(255))
    
+   
 class A_role(Base, AllFeaturesMixin):
    __tablename__ = 'a_role'
    id_role = db.Column(db.Integer, db.ForeignKey('role.id_role'), primary_key=True)
